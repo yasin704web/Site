@@ -1,26 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
+
+
 <head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ product.name }}</title>
+
 <link rel="stylesheet" href="/static/style.css">
+
 </head>
+
+
 
 <body>
 
-<div class="card">
 
-<h1>{{product.name}}</h1>
+
+<div class="product-box">
+
+
+<h1>
+
+{{ product.name }}
+
+</h1>
+
+
+
+<h2>
+
+{{ product.price }}
+
+</h2>
+
+
 
 <p>
-{{product.description}}
+
+{{ product.description }}
+
 </p>
 
-<h2>{{product.price}}</h2>
+
 
 <button>
-خرید محصول
+
+خرید محصول 🛒
+
 </button>
+
+
+
+<br><br>
+
+
+<a href="/">
+
+بازگشت به فروشگاه
+
+</a>
+
 
 </div>
 
+
+
 </body>
+
 </html>
