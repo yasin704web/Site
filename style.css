@@ -1,26 +1,245 @@
-body{
-    font-family: Arial;
-    text-align:center;
-    background:#f2f2f2;
+*{
+    box-sizing: border-box;
+    font-family: Tahoma, Arial, sans-serif;
 }
+
+
+body{
+
+    margin:0;
+
+    background:#f4f6f8;
+
+    color:#222;
+
+    text-align:center;
+
+}
+
+
+
+header{
+
+    background:#111827;
+
+    color:white;
+
+    padding:40px 20px;
+
+}
+
+
+
+header h1{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.products{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:25px;
+
+    padding:40px;
+
+}
+
 
 
 .card{
 
     background:white;
-    margin:20px;
-    padding:20px;
-    border-radius:15px;
+
+    width:280px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
 
 }
 
 
-button,a{
 
-    padding:10px 20px;
-    border-radius:10px;
-    background:black;
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.card h2{
+
+    color:#111827;
+
+}
+
+
+
+a{
+
+    display:inline-block;
+
+    background:#2563eb;
+
     color:white;
+
     text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    margin-top:10px;
+
+}
+
+
+
+a:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+button{
+
+    background:#16a34a;
+
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+button:hover{
+
+    background:#15803d;
+
+}
+
+
+
+input,textarea{
+
+    width:90%;
+
+    max-width:400px;
+
+    padding:15px;
+
+    margin:10px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+
+
+textarea{
+
+    height:120px;
+
+}
+
+
+
+.login-box,
+.admin-box,
+.product-box{
+
+    background:white;
+
+    width:90%;
+
+    max-width:600px;
+
+    margin:50px auto;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+
+.product-box h1{
+
+    font-size:35px;
+
+}
+
+
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    padding:20px;
+
+    margin-top:50px;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
+
+
+    .products{
+
+        padding:20px;
+
+    }
+
+
+    .card{
+
+        width:100%;
+
+    }
 
 }
