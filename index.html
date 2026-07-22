@@ -1,27 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
+
 <head>
-<title>فروشگاه</title>
-<link rel="stylesheet" href="/static/style.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>فروشگاه یاسین</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
 </head>
+
 
 <body>
 
-<h1>🛒 فروشگاه یاسین</h1>
+
+<header>
+
+    <h1>🚀 فروشگاه یاسین</h1>
+
+    <p>
+        بهترین فایل‌ها و پکیج‌های آموزشی
+    </p>
+
+</header>
+
+
+
+<section class="products">
+
 
 {% for product in products %}
 
-<div class="card">
-<h2>{{product.name}}</h2>
-<p>{{product.price}}</p>
 
-<a href="/product/{{product.id}}">
+<div class="card">
+
+
+<h2>
+{{ product.name }}
+</h2>
+
+
+<p>
+{{ product.price }}
+</p>
+
+
+<a href="/product/{{ product.id }}">
+
 مشاهده محصول
+
 </a>
+
 
 </div>
 
+
 {% endfor %}
 
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+تمامی حقوق محفوظ است © 2026
+</p>
+
+</footer>
+
+
 </body>
+
 </html>
