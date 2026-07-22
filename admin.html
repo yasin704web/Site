@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
 
+<body>
+
+<h1>پنل مدیریت 👑</h1>
+
+
+{% for product in products %}
+
+<div class="card">
+
+<h2>{{product.name}}</h2>
+
+<a href="/edit/{{product.id}}">
+ویرایش
+</a>
+
+<a href="/delete/{{product.id}}">
+حذف
+</a>
+
+</div>
+
+{% endfor %}
+
+
+</body>
+</html>
