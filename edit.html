@@ -1,28 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
+
+
 <head>
+
+<meta charset="UTF-8">
+
+<title>ویرایش محصول</title>
+
 <link rel="stylesheet" href="/static/style.css">
+
 </head>
+
+
 
 <body>
 
-<h1>ویرایش محصول</h1>
+
+
+<div class="admin-box">
+
+
+<h1>
+ویرایش محصول ✏️
+</h1>
+
 
 
 <form method="post">
 
-<input name="name" value="{{product.name}}">
 
-<input name="price" value="{{product.price}}">
+
+<input
+
+name="name"
+
+value="{{product.name}}">
+
+
+<input
+
+name="price"
+
+value="{{product.price}}">
+
+
+<textarea
+
+name="description">
+
+{{product.description}}
+
+</textarea>
+
 
 
 <button>
-ذخیره
+
+ذخیره تغییرات
+
 </button>
+
 
 
 </form>
 
 
+
+</div>
+
+
+
 </body>
+
 </html>
