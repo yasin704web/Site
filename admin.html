@@ -1,32 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
+
+
 <head>
+
+<meta charset="UTF-8">
+
+<title>پنل مدیریت</title>
+
 <link rel="stylesheet" href="/static/style.css">
+
 </head>
+
 
 <body>
 
-<h1>پنل مدیریت 👑</h1>
+
+<h1>
+👑 پنل مدیریت
+</h1>
+
+
+
+<div class="admin-box">
+
+
+<h2>
+افزودن محصول
+</h2>
+
+
+<form action="/add" method="post">
+
+
+<input 
+name="name" 
+placeholder="نام محصول">
+
+
+
+<input 
+name="price" 
+placeholder="قیمت">
+
+
+
+<textarea 
+name="description"
+placeholder="توضیحات">
+</textarea>
+
+
+
+<button>
+افزودن
+</button>
+
+
+</form>
+
+
+
+<hr>
+
+
+
+<h2>
+محصولات
+</h2>
+
 
 
 {% for product in products %}
 
+
 <div class="card">
 
-<h2>{{product.name}}</h2>
+
+<h3>
+{{product.name}}
+</h3>
+
+
+<p>
+{{product.price}}
+</p>
+
+
 
 <a href="/edit/{{product.id}}">
-ویرایش
+✏️ ویرایش
 </a>
+
+
+<br><br>
+
 
 <a href="/delete/{{product.id}}">
-حذف
+❌ حذف
 </a>
 
+
+
 </div>
+
 
 {% endfor %}
 
 
+
+<a href="/logout">
+
+خروج
+
+</a>
+
+
+
+</div>
+
+
+
 </body>
+
 </html>
