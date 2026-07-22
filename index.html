@@ -1,1 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>فروشگاه</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
 
+<body>
+
+<h1>🛒 فروشگاه یاسین</h1>
+
+{% for product in products %}
+
+<div class="card">
+<h2>{{product.name}}</h2>
+<p>{{product.price}}</p>
+
+<a href="/product/{{product.id}}">
+مشاهده محصول
+</a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>
